@@ -1,38 +1,22 @@
 package pglp.pglp3_4;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test;
 
 /**
- * Unit test for simple App.
+ * classe de test de SimplePrinter.
  */
 public class AppTest 
-    extends TestCase
+   
 {
     /**
-     * Create the test case
-     *
-     * @param testName name of the test case
+     * test de la méthode print
      */
-    public AppTest( String testName )
+    @Test
+	public void Test( )
     {
-        super( testName );
+    	SimplePrinter s=new SimplePrinter();
+    	s.print();
+    
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
 }
